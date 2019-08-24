@@ -104,7 +104,7 @@ def m_help(a, b):
     return x
     
 def EulerHodkinHuxley(EL, DeltaT, EK, maxT, gNa, ENa, Cm, V0, Iext, gL, gK):
-    T = np.arange(10.0, maxT, DeltaT)
+    T = np.arange(0, maxT, DeltaT)
     V = np.zeros(len(T))
     V[0] = V0
     n = np.zeros(len(T))
